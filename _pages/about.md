@@ -3,7 +3,7 @@ permalink: /
 title: "About"
 ---
 
-<a href="/github.io/lab1/" style="
+<a href="https://janoskulcsar.github.io/github.io/lab1/" style="
   display:inline-block;
   background:#2874A6;
   color:#fff;
