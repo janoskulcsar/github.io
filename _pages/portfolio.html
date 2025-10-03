@@ -1,14 +1,71 @@
----
-layout: archive
-title: "Portfolio"
-permalink: /portfolio/
-author_profile: true
----
+<style>
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5em;
+  padding: 2em 1em;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+.portfolio-grid figure {
+  background: #f6f6f6;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #0001;
+  overflow: hidden;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.portfolio-grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+.portfolio-grid figcaption {
+  text-align: center;
+  padding: 0.75em 0.5em;
+  font-size: 1.06em;
+  color: #333;
+}
+@media (max-width: 900px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
 
-{% include base_path %}
+<section class="portfolio-grid">
 
+  <figure>
+    <img src="/images/photo1.jpg" alt="Projekt 1 képe">
+    <figcaption>Projekt 1 címe</figcaption>
+  </figure>
+  <figure>
+    <img src="/images/photo2.jpg" alt="Projekt 2 képe">
+    <figcaption>Projekt 2 címe</figcaption>
+  </figure>
+  <figure>
+    <img src="/images/photo3.jpg" alt="Projekt 3 képe">
+    <figcaption>Projekt 3 címe</figcaption>
+  </figure>
+  <figure>
+    <img src="/images/photo4.jpg" alt="Projekt 4 képe">
+    <figcaption>Projekt 4 címe</figcaption>
+  </figure>
+  <figure>
+    <img src="/images/photo5.jpg" alt="Projekt 5 képe">
+    <figcaption>Projekt 5 címe</figcaption>
+  </figure>
+  <figure>
+    <img src="/images/photo6.jpg" alt="Projekt 6 képe">
+    <figcaption>Projekt 6 címe</figcaption>
+  </figure>
 
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
-
+</section>
