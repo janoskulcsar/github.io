@@ -5,7 +5,7 @@ permalink: /rolunk/
 
 # Rólunk
 
-![Portréfotó](/images/githubAvatar.png "Képen: szerző portréja")
+![Portréfotó](images/githubAvatar.png "Képen: szerző portréja")
 
 **Név:** Kulcsár János  
 Egyetemi hallgató, TG. Mureș | UMFST G.E. Palade  
